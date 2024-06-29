@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo {
+    
+}
+
+.navbar{
+    padding-left: 25px;
+    background-color: rgb(253, 252, 252);
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
