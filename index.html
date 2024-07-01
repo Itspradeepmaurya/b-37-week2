@@ -32,7 +32,7 @@
         .top-right-container {
             position: absolute;
             top: 20px; /* Adjust as needed */
-            right: 20px; /* Adjust as needed */
+            right: 275px; /* Adjust as needed */
             display: flex;
             align-items: center;
         }
@@ -41,7 +41,7 @@
             display: flex;
             align-items: center;
             border-bottom: 1.5px solid #000; /* Underline for the whole container */
-            margin-right: 20px; /* Space between search bar and button */
+           margin-right: 20px;   /* Space between search bar and button */
             margin-top: 50px;
         }
 
@@ -73,9 +73,37 @@
         color: #252525;
         margin: 0 10px;
     }
+
+    .express-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 30px;
+    margin-right: 10px;    
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+}
+
+.first{
+    font-weight: bold;
+    display: flex;   
+}
+
+
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
 <body>
+    <div class="main"  style="margin: auto; max-width: 1300px; position:relative;">
     <div class="head1">
         <div class="">
             <p>MORE BRANDS</p>
@@ -86,8 +114,7 @@
                     <span class="material-symbols-outlined">location_on</span>STORES
                 </li>
                 <li>
-                    <span class="material-symbols-outlined"> contacts </span>CONTACT
-                    US
+                    <span class="material-symbols-outlined"> contacts </span>CONTACT US
                 </li>
                 <li>
                     <span class="material-symbols-outlined"> person </span>LOGIN
@@ -108,40 +135,56 @@
 
       <!------------------------------- Najim------------------------------------------------------------>
   <nav>
-        <div class="navbar">
+        <div class="navbar" style="box-sizing: border-box;">
             <div class="logo">
-                <img style="height: 25px;" src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/header_brand_logo_RBK.png?auto=format" alt=""></div>
+                <img style="height: 25px; width: 200px;" src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/header_brand_logo_RBK.png?auto=format" alt=""></div>
                 <div>
-                    <a>NEW</a>
+                    <span style="margin-left: 20px;">NEW</span>
                 </div>
                 <div>
-                    <a>MEN</a>
+                    <span style="margin-left: 20px;">MEN</span>
                 </div>
                 <div>
-                    <a>WOMEN</a>
+                    <span style="margin-left: 20px;">WOMEN</span>
                 </div>
                 <div>
-                    <a>ICONS</a>
+                    <span style="margin-left: 20px;">ICONS</span>
                 </div>
                 <div>
-                    <a>SPORTS</a>
+                    <span style="margin-left: 20px;">SPORTS</span>
                 </div>
                 <div>
-                    <a>CLASSIC</a>
+                    <span style="margin-left: 20px;">CLASSIC</span>
                 </div>
                 <div>
-                    <a>SALE</a>
+                    <span style="margin-left: 20px;">SALE</span>
                 </div>
         </div>
-    </nav>
-      <!------------------------------- Najim------------------------------------------------------------>
-      <div class = "top-right-container">
-        <div class = "search-container">
-            <i class="fa fa-search"></i>
+
+        <!------------------------------- Najim------------------------------------------------------------>
+        
+        <!-------------------------trpti----------------------------->
+        <div class = "top-right-container" >
+          <div class = "search-container">
+              <i class="fa fa-search"></i>
+      
+              <input type="text" class="search-input" placeholder="Search Classic">
+          </div>
+        </div>
+        <!------------------------------------trpti----------------------------->
+        <!------------------------Rakhi------------------->
     
-            <input type="text" class="search-input" placeholder="Search Classic">
-        </div>
-    </div>
+        <button class="express-button" style="position: absolute; right: 20px; top: 61px;">
+            <img src="../b-37-week2/Delivery Truck.png" alt="Delivery Truck Icon">
+            <div class="div">
+                <span class="first">EXPRESS DELIVERY</span>
+                <span class="second">Select your nearest store > </span>
+            </div>
+        </button>
+
+        <!-------------------Rakhi-------------------------------->
+    </nav>
+</div>
     
     <!------------------------------- pradeep------------------------------------------------------------>
     <div style="margin: auto; max-width: 1300px;">
